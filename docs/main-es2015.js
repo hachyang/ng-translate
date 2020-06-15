@@ -158,6 +158,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+// import ngx-translate-messageformat-compiler
+//import {TranslateMessageFormatCompiler} from 'ngx-translate-messageformat-compiler';
 class AppModule {
 }
 AppModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineNgModule"]({ type: AppModule, bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"]] });
@@ -200,7 +202,7 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector
     }], null, null); })();
 // required for AOT compilation
 function HttpLoaderFactory(http) {
-    return new _ngx_translate_http_loader__WEBPACK_IMPORTED_MODULE_4__["TranslateHttpLoader"](http);
+    return new _ngx_translate_http_loader__WEBPACK_IMPORTED_MODULE_4__["TranslateHttpLoader"](http, '../assets/i18n/', '.json');
 }
 
 

@@ -329,6 +329,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var _angular_common_http__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
     /*! @angular/common/http */
     "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/http.js"); // import ngx-translate and the http loader
+    // import ngx-translate-messageformat-compiler
+    //import {TranslateMessageFormatCompiler} from 'ngx-translate-messageformat-compiler';
 
 
     var AppModule = function AppModule() {
@@ -385,7 +387,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 
     function HttpLoaderFactory(http) {
-      return new _ngx_translate_http_loader__WEBPACK_IMPORTED_MODULE_4__["TranslateHttpLoader"](http);
+      return new _ngx_translate_http_loader__WEBPACK_IMPORTED_MODULE_4__["TranslateHttpLoader"](http, '../assets/i18n/', '.json');
     }
     /***/
 

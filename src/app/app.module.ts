@@ -8,7 +8,7 @@ import {TranslateCompiler,TranslateLoader, TranslateModule} from '@ngx-translate
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
 // import ngx-translate-messageformat-compiler
-import {TranslateMessageFormatCompiler} from 'ngx-translate-messageformat-compiler';
+//import {TranslateMessageFormatCompiler} from 'ngx-translate-messageformat-compiler';
 
 @NgModule({
     declarations: [
@@ -35,5 +35,6 @@ export class AppModule { }
 
 // required for AOT compilation
 export function HttpLoaderFactory(http: HttpClient) {
-    return new TranslateHttpLoader(http);
+    return new TranslateHttpLoader(http, '../assets/i18n/',
+    '.json');
 }
