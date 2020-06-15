@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 import {TranslateService} from '@ngx-translate/core';
 //import {_} from '@biesbjerg/ngx-translate-extract/dist/utils/utils';
-import defaultLanguage from "./../assets/i18n/en-US.json";
+//import defaultLanguage from "./../assets/i18n/en-US.json";
 export function STI(str: string) {
   return str;
 }
@@ -14,7 +14,7 @@ export class AppComponent {
     messageBoxContent = STI('demo.title');
     constructor(public translate: TranslateService) {
         //translate.setDefaultLang('en');
-    translate.setTranslation('en-US', defaultLanguage);
+    //translate.setTranslation('en-US', defaultLanguage);
     translate.addLangs(['en-US', 'de-DE', 'zh-CN']);
     translate.setDefaultLang('en-US');
 
