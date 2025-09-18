@@ -1,0 +1,37 @@
+{
+	"i18n-DE": "Deutsche",
+	"demo": {
+		"greeting": "Hallo {{name}}!",
+		"select": "Sprache ändern",
+		"text": "﻿Dies ist eine einfache Applikation um die Funktionen von CDI zu demonstrieren.",
+		"title": "Übersetzungs-Demo"
+	},
+	"i18n-EN": "Englisch",
+	"pluralization": {
+		"people": "{gender, select, male{His name is} female{Her name is} other{Their names are }} {name}",
+		"things": "Es gibt {count, plural, =0{is} one{is} other{are}} {count, plural, =0{} one{a} other{several}} {count, plural, =0{nothing} one{thing} other{things}}"
+	},
+	"i18n-ZH": "Chinesisch",
+
+  "PARAMETERS": {
+    "ORP": "Redoxpotenzial",
+    "PH": "pH",
+    "TEMPERATURE_WATER": "Wassertemperatur"
+  },
+  "UNITS": {
+    "MILLIVOLTS": "Millivolt",
+    "PH": "pH",
+    "RESISTANCE": "Widerstand",
+    "DEGREE_FAHRENHEIT": "Fahrenheit",
+    "DEGREE_CENTIGRADE": "Grad"
+  },
+  "COMMON": {
+    "EDIT_SENSOR_TYPE": "Sensor wählen",
+    "POWER_UP": "Einschalten…"
+  },
+  "LEC_SENSOR": {
+    "POWER_OFF": "AUS",
+    "HIGH_MEAS_READING": "HOHER Messwert:{{value}}",
+    "LOW_MEAS_READING": "NIEDRIGER Messwert"
+  }
+}

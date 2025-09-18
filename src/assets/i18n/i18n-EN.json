@@ -1,0 +1,38 @@
+{
+	"i18n-DE": "German",
+	"demo": {
+		"greeting": "Hello {{name}}!",
+		"select": "Change Language",
+		"text": "This is a simple demonstration app for CDI",
+		"title": "Translation demo"
+	},
+	"i18n-EN": "English",
+	"pluralization": {
+		"people": "{gender, select, male{His name is} female{Her name is} other{Their names are }} {name}",
+		"things": "There {count, plural, =0{is} one{is} other{are}} {count, plural, =0{} one{a} other{several}} {count, plural, =0{nothing} one{thing} other{things}}"
+	},
+	"i18n-ZH": "Chinese",
+
+
+  "PARAMETERS": {
+    "ORP": "Oxidation-Reduction Potential",
+    "PH": "pH",
+    "TEMPERATURE_WATER": "Water Temperature"
+  },
+  "UNITS": {
+    "MILLIVOLTS": "Millivolts",
+    "PH": "pH",
+    "RESISTANCE": "Resistance",
+    "DEGREE_FAHRENHEIT": "Fahrenheit",
+    "DEGREE_CENTIGRADE": "Centigrade"
+  },
+  "COMMON": {
+    "EDIT_SENSOR_TYPE": "Select sensor",
+    "POWER_UP": "Starting up…"
+  },
+  "LEC_SENSOR": {
+    "POWER_OFF":"Power Off",
+    "HIGH_MEAS_READING": "High Measurement Reading:{{value}}",
+    "LOW_MEAS_READING": "Low Measurement Reading"
+  }	
+}

@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 import {TranslateService} from '@ngx-translate/core';
 //import {_} from '@biesbjerg/ngx-translate-extract/dist/utils/utils';
-//import defaultLanguage from "./../assets/i18n/en-US.json";
+//import defaultLanguage from "./../assets/i18n/i18n-EN.json";
 export function STI(str: string) {
   return str;
 }
@@ -13,13 +13,13 @@ export function STI(str: string) {
 export class AppComponent {
     messageBoxContent = STI('demo.title');
     constructor(public translate: TranslateService) {
-        //translate.setDefaultLang('en');
-    //translate.setTranslation('en-US', defaultLanguage);
-    translate.addLangs(['en-US', 'de-DE', 'zh-CN']);
-    translate.setDefaultLang('en-US');
+    //translate.setDefaultLang('en');
+    //translate.setTranslation('i18n-EN', defaultLanguage);
+    translate.addLangs(['i18n-EN', 'i18n-DE', 'i18n-ZH']);
+    translate.setDefaultLang('i18n-EN');
 
     const browserLang = translate.getBrowserLang();
-    translate.use(browserLang.match(/de|de-DE/) ? 'de-DE' : 'en-US');
+    translate.use(browserLang.match(/de|de-DE/) ? 'i18n-DE' : 'i18n-EN');
     }
     useLanguage(language: string) {
       this.translate.use(language);

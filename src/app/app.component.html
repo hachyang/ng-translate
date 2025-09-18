@@ -11,18 +11,24 @@
 
 <div>
   <!-- translation: directive (key as attribute)-->
-  <p [translate]="'demo.text'"></p>
+  <!-- <p [translate]="'demo.text'"></p> -->
 
   <!-- translation: directive (key as content of element) -->
   <p translate>demo.text</p>
 </div>
+
 <!-- translation: translation pipe -->
-<p>{{ 'demo.greeting' | translate:{name:'Andreas'} }}</p>
+<p>{{ 'demo.greeting' | translate:{name:'Robert'} }}</p>
+
+<p translate>PARAMETERS.TEMPERATURE_WATER</p>
+
+<p translate [translateParams]="{value: 12.345678}">LEC_SENSOR.HIGH_MEAS_READING</p>
 
 <!-- translation: directive (key as attribute) -->
-<p [translate]="'demo.greeting'" [translateParams]="{name: 'Andreas'}"></p>
+<!--<p [translate]="'demo.greeting'" [translateParams]="{name: 'Andreas'}"></p> -->
 
 <!-- translation: directive (key as content of element)-->
-<p translate [translateParams]="{name: 'Andreas'}">demo.greeting</p>
+<!-- <p translate [translateParams]="{name: 'Andreas'}">demo.greeting</p> -->
+
 
 
